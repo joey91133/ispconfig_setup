@@ -47,7 +47,10 @@ source $PWD/distros/$DISTRO/preinstallcheck.sh
 source $PWD/distros/$DISTRO/askquestions.sh
 source $PWD/distros/$DISTRO/askquestions_multiserver.sh
 source $PWD/distros/$DISTRO/install_basics.sh
+source $PWD/distros/$DISTRO/install_postfix.sh
 source $PWD/distros/$DISTRO/install_mysql.sh
+source $PWD/distros/$DISTRO/install_mta.sh
+source $PWD/distros/$DISTRO/install_antivirus.sh
 source $PWD/distros/$DISTRO/install_webserver.sh
 source $PWD/distros/$DISTRO/install_ftp.sh
 source $PWD/distros/$DISTRO/install_quota.sh
@@ -55,7 +58,9 @@ source $PWD/distros/$DISTRO/install_bind.sh
 source $PWD/distros/$DISTRO/install_webstats.sh
 source $PWD/distros/$DISTRO/install_jailkit.sh
 source $PWD/distros/$DISTRO/install_fail2ban.sh
+source $PWD/distros/$DISTRO/install_webmail.sh
 source $PWD/distros/$DISTRO/install_ispconfig.sh
+source $PWD/distros/$DISTRO/install_fix.sh
 
 #---------------------------------------------------------------------
 # Main program [ main() ]
@@ -126,6 +131,7 @@ if [ -f /etc/debian_version ]; then
     fi
     if [ $CFG_JKIT == "y" ]; then
     InstallJailkit 
+    fi
   else
 	InstallBasePhp    #to remove in feature release
   fi  
