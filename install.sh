@@ -57,7 +57,6 @@ source $PWD/distros/$DISTRO/install_webstats.sh
 source $PWD/distros/$DISTRO/install_jailkit.sh
 source $PWD/distros/$DISTRO/install_fail2ban.sh
 source $PWD/distros/$DISTRO/install_ispconfig.sh
-source $PWD/distros/$DISTRO/install_fix.sh
 
 #---------------------------------------------------------------------
 # Main program [ main() ]
@@ -137,7 +136,6 @@ if [ -f /etc/debian_version ]; then
   InstallWebStats   
   InstallFail2ban 
   InstallISPConfig
-  InstallFix
   echo -e "${green}Well done ISPConfig installed and configured correctly :D ${NC}"
   echo "Now you can connect to your ISPConfig installation at https://$CFG_HOSTNAME_FQDN:8080 or https://IP_ADDRESS:8080"
   echo "You can visit my GitHub profile at https://github.com/servisys/ispconfig_setup/"
@@ -173,7 +171,6 @@ else
 	    fi
 		InstallFail2ban 
 		InstallISPConfig
-		#InstallFix
 		echo -e "${green}Well done ISPConfig installed and configured correctly :D ${NC}"
 		echo "Now you can connect to your ISPConfig installation at https://$CFG_HOSTNAME_FQDN:8080 or https://IP_ADDRESS:8080"
 		echo "You can visit my GitHub profile at https://github.com/servisys/ispconfig_setup/"
