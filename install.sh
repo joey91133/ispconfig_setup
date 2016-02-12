@@ -48,7 +48,6 @@ source $PWD/distros/$DISTRO/askquestions.sh
 source $PWD/distros/$DISTRO/askquestions_multiserver.sh
 source $PWD/distros/$DISTRO/install_basics.sh
 source $PWD/distros/$DISTRO/install_mysql.sh
-source $PWD/distros/$DISTRO/install_mta.sh
 source $PWD/distros/$DISTRO/install_webserver.sh
 source $PWD/distros/$DISTRO/install_ftp.sh
 source $PWD/distros/$DISTRO/install_quota.sh
@@ -158,7 +157,6 @@ else
 		AskQuestions 
 		InstallBasics 
 		InstallSQLServer 
-		InstallMTA 
 		InstallWebServer
 		InstallFTP 
 		#if [ $CFG_QUOTA == "y" ]; then
