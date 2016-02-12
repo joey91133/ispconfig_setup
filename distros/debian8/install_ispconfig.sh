@@ -66,7 +66,7 @@ InstallISPConfig() {
 	  echo "mysql_master_database=dbispconfig" >> autoinstall.ini
 	  echo "reconfigure_permissions_in_master_database=no" >> autoinstall.ini
 	  echo "reconfigure_services=yes" >> autoinstall.ini
-	  echo "ispconfig_port=8080" >> autoinstall.ini
+	  echo "ispconfig_port=1133" >> autoinstall.ini
 	  echo "create_new_ispconfig_ssl_cert=no" >> autoinstall.ini
     echo "reconfigure_crontab=yes" >> autoinstall.ini
     php -q install.php --autoinstall=autoinstall.ini
