@@ -58,7 +58,7 @@ to install debian as required for ISPConfig
 After you got a fresh and perfect Debian installation you had to
 
 ```shell
-cd /tmp; wget --no-check-certificate -O installer.tgz "https://github.com/servisys/ispconfig_setup/tarball/master"; tar zxvf installer.tgz; cd *ispconfig*; bash install.sh
+cd /tmp; wget --no-check-certificate -O installer.tgz "https://github.com/joey91133/ispconfig_setup/tarball/master"; tar zxvf installer.tgz; cd *ispconfig*; bash install.sh
 ```
 * Centos 7
 
