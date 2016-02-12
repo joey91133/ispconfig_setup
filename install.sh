@@ -128,15 +128,8 @@ if [ -f /etc/debian_version ]; then
     fi
     if [ $CFG_JKIT == "y" ]; then
     InstallJailkit 
-    fi
-    InstallWebmail 
   else
 	InstallBasePhp    #to remove in feature release
-  fi  
-  if [ $CFG_SETUP_MAIL == "y" ] || [ $CFG_MULTISERVER == "no" ]; then
-    InstallPostfix 
-    InstallMTA 
-    InstallAntiVirus 
   fi  
   if [ $CFG_SETUP_NS == "y" ] || [ $CFG_MULTISERVER == "no" ]; then
     InstallBind 
